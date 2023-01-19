@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* background-color: #111222; */
+    background-image: url("regpageimgmaybe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainbox {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #111222; */
+    /* align-items: center; */
+
+}
+
+.reform {
+
+    margin: 40px;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 2pc;
+    height: 80vh;
+    width: 25vw;
+    /* align-items: center; */
+    background-color: rgba(240, 248, 255, 0.8);
+}
+
+a {
+    /* text-decoration: n   one; */
+    color: #111222;
+}
+
+.reform h2 {
+    color: rgba(17, 18, 34, 0.8);
+    padding: 7px;
+}
+
+.reform form input {
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 2pc;
+
+}
+
+.reform form button {
+    padding: 15px;
+    margin: 7px;
+    border-radius: 2pc;
+    background-color: rgba(240, 248, 255, 0.9);
+}

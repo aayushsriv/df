@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new_acc.css">
+
+</head>
+
+<body>
+    <div class="mainbox">
+        <center>
+
+            <div class="reform">
+                <h2>Registration Form</h2>
+                <form action="regform.html" onsubmit="return validate()">
+                    <input type="text" placeholder="Enter Your Name" id="uname" required>
+                    <input type="email" name="" placeholder="Enter Your Email" id="email" required>
+                    <input type="password" name="" placeholder="Enter Your Password Here" id="pwd" required>
+                    <input type="password" name="" placeholder="Confirm Your Password Here" id="vpwd" required>
+                    <button type="submit"> Create Account </button>
+                </form>
+                <p>Want to go back to home? <a href="index.html">Back home</a></p>
+            </div>
+        </center>
+    </div>
+    <script>
+        function validate() {
+
+            var name = document.getElementById("uname").value;
+            var pwd = document.getElementById("pwd").value;
+            var vpwd = document.getElementById("vpwd").value;
+            var email = document.getElementById("email").value;
+
+
+
+
+            if (name.trim() == "" || pwd.trim() == "" || vpwd.trim() == "" || email.trim() == "") {
+                alert("Blank not allowed");
+                return false;
+            }
+
+            else if (pwd != vpwd) {
+                alert("Pass not same");
+                return false;
+            }
+
+            else {
+                return true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
